@@ -1,6 +1,6 @@
 import { RequestHandler } from "express";
 import bcrypt from "bcrypt";
-import { createUser, getUserByEmail  } from "../services/auth";
+import { createUser, getUserByEmail  } from "../services/user";
 import { createUserSchema } from "../schemas/auth";
 import { createJWT } from "../libs/jwt";
 
