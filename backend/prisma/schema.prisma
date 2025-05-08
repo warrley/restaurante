@@ -18,3 +18,13 @@ model User {
   email String @unique
   password String 
 }
+
+model Plate {
+  id Int @id @default(autoincrement())
+  name String
+  price Float 
+  available Boolean @default(false)
+  description String
+  ingredients Json?
+  category String
+}
